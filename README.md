@@ -45,3 +45,4 @@ Create an algorithm that outputs a prediction model.
 
 # Analysis results
 Summarized in google slide.
+[テレマーケティングの分析](https://docs.google.com/presentation/d/1XOTe0vtXPOcgHAdQlEiVnjTgES54jnAREL0m6kwSyWs/edit?usp=sharing)
