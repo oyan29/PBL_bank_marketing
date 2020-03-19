@@ -101,23 +101,23 @@ abline(v=1)
 sales <- 5000  # 売上
 cost <- 500    # コスト
 
-##### 学習データとテストデータに分割
-#####train_idx<-sample(c(1:dim(train)[1]), size = dim(train)[1]*0.7)
-#####train_train <- train[train_idx, ]
-#####train_test <- train[-train_idx, ]
+## 学習データとテストデータに分割
+train_idx<-sample(c(1:dim(train)[1]), size = dim(train)[1]*0.7)
+train_train <- train[train_idx, ]
+train_test <- train[-train_idx, ]
 
 #################################################
 # 全てを突っ込む場合
 #################################################
 # ロジスティック回帰
-model1 <- glm(y~., data=train, family='binomial')
+model1 <- glm(y~., data=train_train, family='binomial')
 summary(model1)
 # 回帰係数
 model1$coefficients
 # 回帰係数から指数を取り出す(オッズ比)
 exp(model1$coefficients)
 # 予測(n%の確率で成約)
-y_pred <- predict(model1, data=train, type='response')
+y_pred <- predict(model1, data=train_test, type='response')
 y_pred
 # 予測値の平均
 y_mean <- mean(y_pred) # 0.1124941
@@ -126,7 +126,7 @@ y_mean
 y_pred_flag <- ifelse( y_pred > y_mean, 1, 0 )
 y_pred_flag
 # 混同行列
-table(y_pred_flag, train$y)
+table(y_pred_flag, train_test$y)
 # y_pred_flag    no   yes
 #           0 25432   514
 #           1  4516  3282
