@@ -21,28 +21,28 @@ Please convert the character code to UTF-8 with BOM.
 
 # Dataset
 ## Description
-| カラム名 | 定義 |
-| :---: | :---: |
-| age            | 年齢 |
-| job            | 職業 |
-| marital        | 婚姻状況 |
-| default        | クレジットの支払遅延 |
-| education      | 最終学歴 |
-| housing        | 不動産ローンの有無 |
-| loan           | 個人ローンの有無 |
-| contact        | 連絡デバイス |
-| day_of_week    | 最終連絡曜日 |
-| duration       | 通話時間(秒) |
-| campaign       | キャンペン期間中の接触回数 |
-| pdays          | 前回の接触からの経過日数 |
-| previous       | 以前のキャンペーン結果 |
-| poutcome       | 以前のキャンペーンの接触回数 |
-| emp.var.rate   | employment variation rate |
-| cons.price.idx | 消費者物価指数 |
-| cons.conf.idx  | 消費者信頼感指数 |
-| euribor3m      | ３ヶ月間ユーリボー指標金利 |
-| nr.employed    | 四半期ごとの就業者数 |
-| y              | テレマーケティングの結果 |
+| カラム名 | 定義 | データ |
+| :---: | :---   | :---: |
+| age            | 年齢 | 数値 |
+| job            | 職業 | カテゴリ |
+| marital        | 婚姻状況 | カテゴリ |
+| default        | クレジットの支払遅延 | カテゴリ |
+| education      | 最終学歴 | カテゴリ |
+| housing        | 不動産ローンの有無 | カテゴリ |
+| loan           | 個人ローンの有無 | カテゴリ |
+| contact        | 連絡デバイス | カテゴリ |
+| day_of_week    | 最終連絡曜日 | カテゴリ |
+| duration       | 通話時間(秒) | 数値 | カテゴリ |
+| campaign       | キャンペーン期間中の接触回数 | 数値 |
+| pdays          | 前回の接触からの経過日数 | 数値 |
+| previous       | 以前のキャンペーン結果 | カテゴリ |
+| poutcome       | 以前のキャンペーンの接触回数 | 数値 |
+| emp.var.rate   | employment variation rate | 数値 |
+| cons.price.idx | 消費者物価指数 | 数値 |
+| cons.conf.idx  | 消費者信頼感指数 | 数値 |
+| euribor3m      | ３ヶ月間ユーリボー指標金利 | 数値 |
+| nr.employed    | 四半期ごとの就業者数 | 数値 |
+| y              | テレマーケティングの結果 | 数値 |
 
 ## Details
 [UCI:Bank Marketing Data Set](https://archive.ics.uci.edu/ml/datasets/bank+marketing#)
